@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/headlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbackcolor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/lay_actionbar"
+            layout="@layout/include_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/twenty" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/sixty"
+            android:layout_below="@+id/lay_actionbar"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/btn_continue"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:layout_marginTop="@dimen/ten"
+                        android:text="Choose Quote Category"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="@dimen/ts_twenty" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ten"
+                        android:orientation="horizontal"
+                        android:scrollingCache="true"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:listitem="@layout/item_quotes_cat" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:layout_marginTop="@dimen/ten"
+                        android:text="Slect One"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="@dimen/ts_twenty" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:text="QUOTE"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="@dimen/ts_twentyfive"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/ten"
+                        android:orientation="vertical"
+                        android:scrollingCache="true"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:listitem="@layout/item_quotes" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_continue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/ten"
+            android:background="@drawable/back_button_dark"
+            android:text="Add Quote"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ts_seventeen" />
+
+
+        <include
+            layout="@layout/include_connection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/twenty" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

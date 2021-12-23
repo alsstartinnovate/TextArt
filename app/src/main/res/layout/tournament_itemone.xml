@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ll_intrest"
+        android:layout_width="@dimen/twohundred"
+        android:layout_height="@dimen/twohundredfifty"
+        android:layout_margin="@dimen/ten"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/rounded_corner_tournament"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="@dimen/five">
+
+
+            <TextView
+                android:id="@+id/tv_challengename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Challenge Name"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/ts_fifteen"
+                android:layout_marginTop="@dimen/twenty"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time remaining"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/ten"
+                android:textSize="@dimen/fifteen"
+                />
+            <TextView
+                android:id="@+id/tv_timeremaining"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="02:12"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/thirty"
+                android:layout_marginTop="@dimen/ten"/>
+            <TextView
+                android:id="@+id/tv_views"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000000"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:drawableLeft="@drawable/view_white"
+                android:textSize="@dimen/fifteen"
+                android:drawablePadding="@dimen/twenty"
+                android:layout_marginTop="@dimen/ten"
+                />
+            <Button
+                android:id="@+id/btn_join"
+                android:layout_width="@dimen/onehundredfifty"
+                android:layout_height="@dimen/forty"
+                android:layout_marginTop="@dimen/twenty"
+                android:text="Join Now"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_corner_join"/>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

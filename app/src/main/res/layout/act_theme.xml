@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/headlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbackcolor"
+    tools:context="com.anilax.activity.ActivitySplash">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/lay_actionbar"
+            layout="@layout/include_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/twenty" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/lay_actionbar"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/btn_continue"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:layout_marginTop="@dimen/ten"
+                    android:text="Choose your"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="@dimen/ts_thirty" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:text="App Preference"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="@dimen/ts_thirtyfive"
+                    android:textStyle="bold" />
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/lyt_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fifteen"
+                    android:background="@color/white"
+
+                    android:minHeight="?attr/actionBarSize"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/lay_light_mode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/seven"
+                        android:background="@drawable/rounded_corner_lighmode"
+                        android:minHeight="?attr/actionBarSize"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/seventyfive"
+                            android:layout_margin="@dimen/eight"
+                            android:drawableLeft="@drawable/sun"
+                            android:gravity="center"
+                            android:padding="@dimen/ten"
+                            android:text="Light Mode"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ts_thirty" />
+
+                        <ImageView
+                            android:id="@+id/img_lightmode"
+                            android:layout_width="@dimen/twenty"
+                            android:layout_height="@dimen/twenty"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="@dimen/ten"
+                            android:layout_marginTop="@dimen/five"
+                            android:layout_marginRight="@dimen/five"
+                            android:src="@drawable/checkmark" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lay_dark_mode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/seven"
+                        android:background="@drawable/rounded_corner_darkmode"
+                        android:minHeight="?attr/actionBarSize"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/seventyfive"
+                            android:layout_margin="@dimen/eight"
+                            android:drawableLeft="@drawable/moon"
+                            android:gravity="center"
+                            android:padding="@dimen/ten"
+                            android:text="Dark Mode"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/ts_thirty" />
+
+                        <ImageView
+                            android:id="@+id/img_darkmode"
+                            android:layout_width="@dimen/twenty"
+                            android:layout_height="@dimen/twenty"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="@dimen/ten"
+                            android:layout_marginTop="@dimen/five"
+                            android:layout_marginRight="@dimen/five"
+                            android:src="@drawable/checkmark" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_continue"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fortyfive"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/fifteen"
+                android:background="@drawable/back_button_dark"
+                android:text="Continue"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ts_seventeen" />
+        </RelativeLayout>
+
+        <include
+            layout="@layout/include_connection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/twenty" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

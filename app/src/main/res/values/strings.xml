@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TextArt</string>
+
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_inter_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_native_id">ca-app-pub-3940256099942544/2247696110</string>
+
+
+    <string name="facebook_banner_id">IMG_16_9_APP_INSTALL#1156954457977643_1159359654403790</string>
+    <string name="facebook_banner_native">IMG_16_9_APP_INSTALL#1156954457977643_1159359654403790</string>
+    <string name="facebook_inter_id">IMG_16_9_APP_INSTALL#1156954457977643_1159359511070471</string>
+    <string name="facebook_native_id">IMG_16_9_APP_INSTALL#1156954457977643_1156959601310462</string>
+
+    <string name="email">mailto:youremail@gmail.com</string>
+    <string name="policy_url">https://google.com</string>
+
+
+    <string name="camera">Camera</string>
+
+
+    <string name="chip_text">Chip text</string>
+    <string name="choose_a_background">Choose a background</string>
+    <string name="clear">Clear</string>
+    <string name="clear_text_end_icon_content_description">Clear text</string>
+    <string name="color">Color</string>
+    <string name="back_vector_path">M50 25,L80 50,M20 50,L80 50,M50 75,L80 50</string>
+
+    <string name="discard">Discard</string>
+    <string name="discard_photo">Discard photo?</string>
+    <string name="done">Done</string>
+    <string name="double_tap">Double Tap to Change</string>
+    <string name="email_feedback">Email feedback</string>
+    <string name="action_search">Search</string>
+
+
+    <string name="flowers">Flowers</string>
+    <string name="appbar_scrolling_view_behavior">
+        com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior
+    </string>
+
+    <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+
+
+    <string name="icon_content_description">Dialog Icon</string>
+    <string name="if_you_go_back_you_will_lose_your_photo">If you go back, you will lose your photo.</string>
+    <string name="item_view_role_description">Tab</string>
+    <string name="keep">Keep</string>
+
+    <string name="loading">Loading...</string>
+    <string name="material_slider_range_end">Range end,</string>
+    <string name="material_slider_range_start">Range start,</string>
+    <string name="max_item">Too much sticker</string>
+    <string name="menu_vector_path">M20 30,L80 30,M20 50,L80 50,M20 70,L80 70</string>
+    <string name="more_quotes">Quotes</string>
+
+    <string name="nature">Nature</string>
+    <string name="night_sky">Night Sky</string>
+
+
+    <string name="photos">Photos</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <string name="quotes1">I look at you and see the rest of my life in front of my eyes</string>
+    <string name="quotes10">Being deeply loved by someone gives you strength, while loving someone deeply gives you
+        courage
+    </string>
+    <string name="quotes11">Love is like war: easy to begin but very hard to stop\u0009</string>
+    <string name="quotes12">Thinking of you keeps me awake. Dreaming of you keeps me asleep. Being with you keeps me
+        alive
+    </string>
+    <string name="quotes13">When love is not madness it is not love</string>
+    <string name="quotes14">"I wish I could turn back the clock. I'd find you sooner and love you longer"</string>
+    <string name="quotes15">"You know it's love when all you want is that person to be happy, even if you're not part of
+        their happiness."
+    </string>
+    <string name="quotes16">"You don't love someone for their looks, or their clothes, or for their fancy car, but
+        because they sing a song only you can hear"
+    </string>
+    <string name="quotes17">I want you. All of you. Your flaws. Your mistakes. Your imperfections. I want you, and only
+        you.
+    </string>
+    <string name="quotes18">True love cannot be found where it does not exist, nor can it be denied where it does
+    </string>
+    <string name="quotes19">"If you love someone, set them free. If they come back they're yours\u0009 if they don't,
+        they never were."
+    </string>
+    <string name="quotes2">The best and most beautiful things in this world cannot be seen or even heard, but must be
+        felt with the heart
+    </string>
+    <string name="quotes20">If you love two people at the same time, choose the second. Because if you really loved the
+        first one, you wouldn’t have fallen for the second
+    </string>
+    <string name="quotes21">Love is that condition in which the happiness of another person is essential to your own
+    </string>
+    <string name="quotes22">To be brave is to love someone unconditionally, without expecting anything in retur</string>
+    <string name="quotes23">Just because someone is single doesn’t mean they’re lonely. Some people are in relationships
+        and they’ve forgotten what happiness is
+    </string>
+    <string name="quotes24">You know when you’re in love when you can’t fall asleep because reality is finally better
+        than your dreams
+    </string>
+    <string name="quotes25">Love yourself first and everything else falls into line. You really have to love yourself to
+        get anything done in this world
+    </string>
+    <string name="quotes26">You know it’s love when all you want is that person to be happy, even if you’re not part of
+        their happiness
+    </string>
+    <string name="quotes27">Love does not consist in gazing at each other, but in looking outward together in the same
+        direction
+    </string>
+    <string name="quotes28">If you wish to be loved, show more of your faults than your virtues</string>
+    <string name="quotes29">It’s useless to hold a person to anything he says while he’s in love, drunk, or running for
+        office
+    </string>
+    <string name="quotes3">To love is nothing. To be loved is something. But to love and be loved, that’s everything
+    </string>
+    <string name="quotes30">If you remember me, then I don’t care if everyone else forgets</string>
+    <string name="quotes31">Love is an act of endless forgiveness, a tender look which becomes a habit</string>
+    <string name="quotes32">When we are in love we seem to ourselves quite different from what we were before</string>
+    <string name="quotes33">Happiness isn’t getting what you want, it’s wanting what you got</string>
+    <string name="quotes34">"There comes a time when you have to stop crossing oceans for people who would'nt even jump
+        in puddles for you "
+    </string>
+    <string name="quotes35">Best lesson I ever learned in life came from the worst feeling I ever felt in life</string>
+    <string name="quotes36">"Every guy thinks that every girls' dream is to find the perfect guy. Every girls' dreams is
+        to eat without getting fat"
+    </string>
+    <string name="quotes37">"If we date there will be moments when I will just stare at you and smile, know that in
+        those moments I'm appreciating everything about yo"
+    </string>
+    <string name="quotes38">"Missing you is the hardest thing I've got to deal with\u0009"</string>
+    <string name="quotes39">"You don't deserve a paragraph. You deserve a thousand books written about how amazing you
+        are\u0009"
+    </string>
+    <string name="quotes4">If you live to be a hundred, I want to live to be a hundred minus one day so I never have to
+        live without you
+    </string>
+    <string name="quotes40">Someday you will look back and know exactly why it had to happy</string>
+    <string name="quotes41">One galaxy, eight planets, one hundred ninety six nations, seven seas, seven billion people,
+        yet my heart still runs after you
+    </string>
+    <string name="quotes42">Seeing someone slowly lose interest in you is probably one of the worst things ever\u0009
+    </string>
+    <string name="quotes43">I hope one day someone asks you about him and you laugh instead of feeling a double edged
+        dagger on your chest\u0009
+    </string>
+    <string name="quotes44">"One of the hardest decisions you'll ever face in life is choosing whether to walk away or
+        try harder \u0009"
+    </string>
+    <string name="quotes45">The thought of kissing you keeps me awake at night\u0009</string>
+    <string name="quotes46">A good heart is always breaking\u0009</string>
+    <string name="quotes47">"I pushed everyone else away because they weren't you\u0009"</string>
+    <string name="quotes48">I fell in love with the way you touched me without using your hands\u0009</string>
+    <string name="quotes49">"Sometimes life doesn't want to give you something you want, not because you don\u0009t
+        deserve it, but because you deserve more"
+    </string>
+    <string name="quotes5">I saw that you were perfect, and so I loved you. Then I saw that you were not perfect and I
+        loved you even more.
+    </string>
+    <string name="quotes50">I can talk to hundreds of people in one day but none of them compare to the smile you can
+        give me in one minute\u0009
+    </string>
+    <string name="quotes51">I reward loyalty with loyalty. I rewart disloyalty with distance</string>
+    <string name="quotes52">"The worst feeling is when you feel like you're annoying the only person you wanna talk
+        to"
+    </string>
+    <string name="quotes53">It felt like heaven when you kissed me so I ignored all the times you put me through hell
+    </string>
+    <string name="quotes54">The first kiss is the last to be forgotten\u0009</string>
+    <string name="quotes55">Some people are like a drug. Make you feel great for a bit then terrible from the inside
+        out\u0009
+    </string>
+    <string name="quotes56">Stop looking for happiness in the same place you lost it \u0009</string>
+    <string name="quotes57">"It was supposed to be us against the world and now it's me against myself and it fucking
+        hurts to breath\u0009"
+    </string>
+    <string name="quotes58">"Sometimes, the only reason why you won't let go of what's making you sad is because it was
+        the only thing that made you happy"
+    </string>
+    <string name="quotes59">"One day you'll just be a memory to some people. Do your best to be a good one\u0009"
+    </string>
+    <string name="quotes6">"You don't love someone because they're perfect, you love them in spite of the fact that
+        they're not."
+    </string>
+    <string name="quotes60">"Find someone who believes in you when you don't"</string>
+    <string name="quotes61">"It hurts like hell when you know that you need to let go of someone but you can't because
+        you're still waiting for the impossible to happen"
+    </string>
+    <string name="quotes62">"They say don't look back, but sometimes it's important to see how far you've come"</string>
+    <string name="quotes63">"It's about who you miss at 2 in the afternoon when you're busy, not 2 in the morning when
+        you're lonely"
+    </string>
+    <string name="quotes64">"Be with someone who makes your Monday's feel like Friday's"</string>
+    <string name="quotes65">I wish I had the power to ignore you like you ignore me</string>
+    <string name="quotes66">"Everytime my phone buzzes I hope it's you missing me"</string>
+    <string name="quotes67">"I'm in love with the idea of you and me still together in the future"</string>
+    <string name="quotes68">"Missing you comes in waves. Tonight I'm drowning"</string>
+    <string name="quotes69">Fall in love with the person who made you believe in soul mates when you had no hope there
+        was anyone in this world who was right for you
+    </string>
+    <string name="quotes7">I would rather spend one lifetime with you, than face all the ages of this world alone
+    </string>
+    <string name="quotes70">"Distance sometimes lets you know who's worth keeping and who's worth letting go"</string>
+    <string name="quotes71">"I don't remember falling in love with you. I just remember holding your hand and realizing
+        how much it was going to hurt when I would have to let go"
+    </string>
+    <string name="quotes72">"Everybody wants something to happen but everybody's too afraid to make the first move"
+    </string>
+    <string name="quotes73">The human heart always forgives no matter what it is told</string>
+    <string name="quotes74">Some eyes touch you more than hands ever could</string>
+    <string name="quotes75">"The same eyes that taught me to love, taught me I'd never be good enough to be loved
+        back"
+    </string>
+    <string name="quotes76">"I'm homesick for arms that don't want to hold me"</string>
+    <string name="quotes77">"Sometimes you just need to distance yourself from people. If they care, they'll notice. If
+        they don't, you know where you stand"
+    </string>
+    <string name="quotes78">I wonder what goes through your mind when someone mentions my name to you</string>
+    <string name="quotes79">"I saw him, and I couldn't differentiate between my heart breaking and my heart
+        fluttering"
+    </string>
+    <string name="quotes8">"I choose you. And I'll choose you over and over and over. Without pause, without a doubt, in
+        a heartbeat. I'll keep choosing you"
+    </string>
+    <string name="quotes80">"My loyalty runs real deep that's why I'm extra selective on who I give my loyalty out to"
+    </string>
+    <string name="quotes81">I wanna be the girl who makes your bad days better, the one that makes you say, \"my life
+        has changed since I met her
+    </string>
+    <string name="quotes82">I say its his loss but ddep down I know its mine too</string>
+    <string name="quotes83">Everybody is a main character to someone</string>
+    <string name="quotes84">I want a relationship with someone who never has me guessing where I stand with them
+    </string>
+    <string name="quotes85">"Just because you took longer than other, doesn't mean you failed. Remember that"</string>
+    <string name="quotes86">"How a person reacts to your sadness says a lot about how long they're going to be in your
+        life"
+    </string>
+    <string name="quotes87">"I hate you because I will have to wonder for the rest of my life why I wasn't
+        enough\u0009"
+    </string>
+    <string name="quotes88">We build stories in our heads and we stick to them until you are finished or they finish
+        us
+    </string>
+    <string name="quotes89">"Sometimes you have to accept that people's part in your story is over"</string>
+    <string name="quotes9">When you realize you want to spend the rest of your life with somebody, you want the rest of
+        your life to start as soon as possible.
+    </string>
+    <string name="quotes90">"You know you really love someoone, when you don't hate them for breaking your heart"
+    </string>
+    <string name="random">Random</string>
+    <string name="rate_5_stars">Rate 5 stars</string>
+    <string name="rating_dialog_cancel">Cancel</string>
+    <string name="rating_dialog_experience">We are a tiny team working extremely hard to give you the best apps for
+        free. Your 5-Stars are better than anything in the world!
+    </string>
+    <string name="rating_dialog_feedback_title">Feedback</string>
+    <string name="rating_dialog_maybe_later">Maybe later</string>
+    <string name="rating_dialog_never">Never</string>
+    <string name="rating_dialog_submit">Submit</string>
+    <string name="rating_dialog_suggestions">"Suggest us what went wrong and we'll work on it!"</string>
+    <string name="rotate">Rotate</string>
+    <string name="s1">Save image</string>
+    <string name="s2">Allow Ad to store image in Picture gallery?</string>
+    <string name="s3">Accept</string>
+    <string name="s4">Decline</string>
+    <string name="s5">Create calendar event</string>
+    <string name="s6">Allow Ad to create a calendar event?</string>
+    <string name="s7">Test Ad</string>
+    <string name="samples">Samples</string>
+    <string name="search_menu_title">Search</string>
+    <string name="share">Share</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="thank_you_2">Have a nice day</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="transparency">Transparency</string>
+
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="file_provider_authority">com.codunite.marwarcare.provider</string>
+
+    <string name="label_ok">Ok</string>
+    <string name="label_cancel">Cancel</string>
+
+    <string name="label_exit">Exit</string>
+    <string name="label_yes">Yes</string>
+    <string name="label_no">No</string>
+    <string name="label_save">Save</string>
+
+    <string name="internet_title">No Network Connection</string>
+    <string name="internet_msg">No Network Connection. Connect to the internet and try again</string>
+    <string name="date_error">Error in getting daya</string>
+    <string name="internet_postivetext">Check Again</string>
+    <string name="internet_negativetext">Cancel</string>
+
+    <string name="permission_title_rationale">Permission needed</string>
+    <string name="permission_read_storage_rationale">Storage read permission is needed to pick files.</string>
+    <string name="permission_write_storage_rationale">Storage write permission is needed to save the image.</string>
+
+    <string name="toast_cannot_retrieve_selected_image">Cannot retrieve selected image</string>
+    <string name="toast_cannot_retrieve_cropped_image">Cannot retrieve cropped image</string>
+    <string name="toast_unexpected_error">Unexpected error</string>
+
+    <string name="uploadimage_head">Click to select profile Picture</string>
+    <string name="uploadimage_takepicture">Take Picture</string>
+
+    <string name="nonterworkconn">No network connection. Connect to the \ninternet and try again</string>
+    <string name="nointernet">No Internet connection</string>
+
+    <string name="splashpromotedtext">Developed by:</string>
+    <string name="splashpromotedby">Anilax Software</string>
+
+    <string name="introtext1">Create </string>
+    <string name="introdesc1">Create your own</string>
+    <string name="introtext2">Create </string>
+    <string name="introdesc2">Create your own 2</string>
+    <string name="introtext3">Create </string>
+    <string name="introdesc3">Create your own 3</string>
+
+    <string name="toolbar_forgotpwd">Forgot password</string>
+    <string name="toolbar_about">About</string>
+    <string name="toolbar_contact">Contact</string>
+    <string name="toolbar_help">Help</string>
+    <string name="toolbar_setting">Setting</string>
+    <string name="toolbar_editprofile">Edit Profile</string>
+    <string name="toolbar_changepassword">Change Password</string>
+    <string name="toolbar_share">Share and rate</string>
+    <string name="toolbar_forgotpassword">Forgot Password</string>
+    <string name="toolbar_helpandfeedback">Help and feedback</string>
+    <string name="toolbar_notification">Notification</string>
+    <string name="toolbar_selecttheme">Select Theme</string>
+
+
+
+    <string name="ls_login">Log In</string>
+    <string name="ls_signup">Sign Up</string>
+    <string name="ls_forgotpwd">Forgot Password</string>
+    <string name="ls_head">Login</string>
+    <string name="ls_mob">Mobile No/ Username</string>
+    <string name="ls_entermob">Mobile No</string>
+    <string name="ls_enterpassword">Choose Password</string>
+    <string name="ls_pwd">Password</string>
+    <string name="ls_or">Or</string>
+    <string name="ls_signup_with_mobile">SignUp With Mobile No</string>
+    <string name="ls_forgottitle">Provide Your Email</string>
+    <string name="ls_email">Email Id</string>
+    <string name="ls_otp">OTP</string>
+    <string name="ls_newpass">New Password</string>
+    <string name="ls_confpass">Confirm Password</string>
+    <string name="enterz_uploadhead">Click to select Picture</string>
+    <string name="label_takepicture">Take Picture</string>
+
+    <string name="register_head_one">Enter mobile number</string>
+    <string name="register_terms">Terms and Condition</string>
+    <string name="register_entername">Enter name</string>
+    <string name="register_otp">Enter OTP</string>
+    <string name="register_selectdob">Select dob</string>
+    <string name="register_enteremail">Enter email</string>
+    <string name="register_enterpassword">Enter password</string>
+    <string name="register_enterusername">Enter username</string>
+    <string name="register_selectgender">Enter gender</string>
+    <string name="register_male">Male</string>
+    <string name="register_female">Female</string>
+    <string name="register_transgender">Transgender</string>
+    <string name="register_dob">Enter date of birth</string>
+    <string name="register_back">Back</string>
+    <string name="register_next">Next</string>
+    <string name="register_enterfname">Enter first name</string>
+    <string name="register_enterlname">Enter last name</string>
+    <string name="register_reenterpassword">Re-enter password</string>
+    <string name="register_btn">Register</string>
+
+    <string name="signup_text">Are you confirm with current data.</string>
+
+    <string name="search_text">Search here</string>
+    <string name="search_text1">Parlor</string>
+    <string name="search_text2">Service</string>
+
+    <string name="comp_sbmtbtn">Submit</string>
+    <string name="comp_title">Enter title</string>
+    <string name="comp_desc">Enter description</string>
+    <string name="comp_type">Select complaint type</string>
+    <string name="comp_head">Submit complaint</string>
+    <string name="comp_imgdesc">Please capture an image of error or detail so we can solve complaint as fast as possible</string>
+
+    <string name="rate_app_title">Rate App</string>
+    <string name="rate_app_message">If you are enjoying our app, please take a moment to rate it on PlayStore. Thanks for your support!</string>
+    <string name="rate_btn_pos">Rate Now</string>
+    <string name="rate_btn_neg">Remind me later</string>
+    <string name="rate_btn_nut">No, Thanks</string>
+
+    <string name="passcode_head">Please enter the passcode below</string>
+    <string name="passcode_btn_verify">VERIFY</string>
+    <string name="passcode_skip">Skip Passcode</string>
+
+    <string name="login_title">Verify Your Number</string>
+    <string name="login_desc">Please enter your mobile number to receive a verification code. Carrier rates may apply</string>
+    <string name="login_txt_phonenumber">Phone Number</string>
+
+    <string name="otp_verification_head">Verification</string>
+    <string name="otp_verification_desc">You will get SMS with a confirmation code to this number.</string>
+    <string name="otp_txt_inputcode">Please input code below</string>
+    <string name="otp_txt_resendcode">RESEND CODE</string>
+    <string name="otp_btn_continue">CONTINUE</string>
+
+    <string name="editprofile_btnfinish">Edit profile</string>
+
+    <string name="long_lorem_ipsum">
+        Rating one.
+    </string>
+</resources>

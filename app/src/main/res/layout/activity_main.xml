@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mainactivity1"
+    android:orientation="vertical">
+
+    <include
+        android:id="@id/toolbarmain"
+        layout="@layout/toolbar_main" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/ads_container"
+        android:layout_below="@id/toolbarmain"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/san_bold"
+                android:text="Text"
+                android:textColor="@color/white"
+                android:textSize="30.0dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/san_regular"
+                android:text=" Photo"
+                android:textColor="#ffffef00"
+                android:textSize="30.0dip" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.0dip"
+            android:fontFamily="@font/san_regular"
+            android:gravity="center"
+            android:text="Easy to add text on photo"
+            android:textColor="@color/text_second"
+            android:textSize="14.0sp" />
+
+        <LinearLayout
+            android:id="@id/ll1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbarmain"
+            android:layout_gravity="center"
+            android:layout_margin="8.0dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@id/btn_galery"
+                android:layout_width="0.0dip"
+                android:layout_height="96.0dip"
+                android:layout_marginRight="4.0dip"
+                android:layout_weight="1.0"
+                app:cardBackgroundColor="#ffff887a"
+                app:cardCornerRadius="4.0dip">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="4.0dip"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_photo2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/san_regular"
+                        android:text="@string/photos"
+                        android:textColor="@color/white"
+                        android:textSize="14.0dip"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@id/btn_sample"
+                android:layout_width="0.0dip"
+                android:layout_height="96.0dip"
+                android:layout_marginLeft="4.0dip"
+                android:layout_marginRight="4.0dip"
+                android:layout_weight="1.0"
+                app:cardCornerRadius="4.0dip">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/sample_gradient_bg"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="4.0dip"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_collage2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/san_regular"
+                        android:text="@string/samples"
+                        android:textColor="@color/white"
+                        android:textSize="14.0dip"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@id/btn_camera"
+                android:layout_width="0.0dip"
+                android:layout_height="96.0dip"
+                android:layout_marginLeft="4.0dip"
+                android:layout_weight="1.0"
+                app:cardBackgroundColor="#ff8e77fa"
+                app:cardCornerRadius="4.0dip">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_margin="4.0dip"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_camera2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/san_regular"
+                        android:text="@string/camera"
+                        android:textColor="@color/white"
+                        android:textSize="14.0dip"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@id/ads_container"
+        android:layout_width="fill_parent"
+        android:layout_height="320.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_margin="8.0dip"
+        android:gravity="center"
+        app:cardBackgroundColor="@color/mainactivity2"
+        app:cardCornerRadius="4.0dip"
+        app:cardElevation="2.0dip">
+
+        <LinearLayout
+            android:id="@id/frameContainerOff"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/san_regular"
+                android:gravity="center"
+                android:text="@string/loading"
+                android:textColor="@color/white"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <include
+            android:id="@id/admob_native_container"
+            layout="@layout/admob_native_medium"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@id/fb_native_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left|top"
+            android:layout_margin="2.0dip"
+            android:background="@drawable/ad_bg"
+            android:paddingLeft="3.0dip"
+            android:paddingRight="3.0dip"
+            android:text="Ad"
+            android:textColor="@color/white"
+            android:textSize="12.0sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@id/btn_more_ads"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginBottom="16.0dip"
+        android:clickable="true"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/mainactivity2"
+        app:cardCornerRadius="4.0dip"
+        app:cardElevation="8.0dip">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ad_border_charge"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16.0dip">
+
+            <FrameLayout
+                android:id="@id/btnImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@id/imgStorymaker"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@id/ad_attribution"
+                    android:src="@drawable/ic_picee"
+                    app:riv_corner_radius="8.0dip" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@id/text_container"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginBottom="8.0dip"
+                android:layout_toLeftOf="@id/ad_attribution"
+                android:layout_toRightOf="@id/btnImage"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/san_bold"
+                    android:gravity="center_vertical"
+                    android:text="Picee - Photo Editor"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/san_regular"
+                    android:gravity="center_vertical"
+                    android:text="All in one Photo Editor tool"
+                    android:textColor="@color/text_second"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/ad_attribution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="2.0dip"
+                android:background="@drawable/ad_bg"
+                android:paddingLeft="4.0dip"
+                android:paddingRight="4.0dip"
+                android:text="Ad"
+                android:textColor="@color/white"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@id/bt_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnImage"
+                android:layout_marginTop="12.0dip"
+                android:background="@drawable/install_bg"
+                android:fontFamily="@font/san_bold"
+                android:gravity="center"
+                android:padding="12.0dip"
+                android:text="VIEW"
+                android:textColor="@color/black"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

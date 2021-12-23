@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/ll_intrest"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hundred"
+        android:layout_margin="@dimen/twenty"
+        android:background="@drawable/rounded_corner_tournament"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:padding="@dimen/ten">
+
+
+            <TextView
+                android:id="@+id/tv_challengename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:gravity="left"
+                android:text="Challenge Name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ts_twenty"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:drawableLeft="@drawable/calender_white"
+                    android:drawablePadding="@dimen/ten"
+                    android:gravity="left"
+                    android:text="00 - 00 - 2020"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fifteen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="5"
+                    android:drawableLeft="@drawable/time_white"
+                    android:drawablePadding="@dimen/fifteen"
+                    android:gravity="right"
+                    android:text="00 - 00 - 2020"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ts_fifteen" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

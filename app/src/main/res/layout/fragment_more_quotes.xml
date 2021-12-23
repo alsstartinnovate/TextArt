@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mainactivity2"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@id/toolbarMoreQuotes"
+        android:layout_width="fill_parent"
+        android:layout_height="56.0dip">
+
+        <ImageView
+            android:id="@id/btnBackQuotes"
+            style="@style/ActionButton"
+            android:layout_width="56.0dip"
+            android:layout_height="56.0dip"
+            android:clickable="true"
+            android:padding="16.0dip"
+            android:src="@drawable/ic_arrow_back" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/recyclerQuotes"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbarMoreQuotes" />
+</RelativeLayout>

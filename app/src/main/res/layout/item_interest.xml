@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lyt_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/ll_intrest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/five"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/v_intrest"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/five"
+            android:background="@drawable/rounded_corner_top" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fortyfive"
+            android:layout_below="@+id/v_intrest"
+            android:background="@drawable/rounded_corner_bottom_dark"
+            android:gravity="center"
+            android:text="asdasdasd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ts_fifteen"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_selected"
+            android:layout_width="@dimen/thirty"
+            android:layout_height="@dimen/thirty"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/ten"
+            android:src="@drawable/checkmark" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

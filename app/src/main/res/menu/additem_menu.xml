@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:enabled="true"
+        android:title="Text" />
+    <item
+        android:id="@+id/nav_shop"
+        android:title="Date" />
+    <item
+        android:id="@+id/nav_setting"
+        android:title="Quote" />
+    <item
+        android:id="@+id/nav_wallet"
+        android:title="Image From Gallery" />
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Image From Camera" />
+</menu>

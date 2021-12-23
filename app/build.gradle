@@ -1,0 +1,118 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.anilax.textart"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        useLibrary 'org.apache.http.legacy'
+        ndk.abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.vectordrawable:vectordrawable-animated:1.0.0'
+    implementation 'androidx.exifinterface:exifinterface:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.vectordrawable:vectordrawable-animated:1.0.0'
+    implementation 'androidx.browser:browser:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.annotation:annotation:1.0.0'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation "androidx.work:work-runtime:2.3.4"
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.github.mancj:MaterialSearchBar:0.8.2'
+    implementation 'com.airbnb.android:lottie:3.4.2'
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'com.github.QuadFlask:colorpicker:0.0.15'
+    implementation 'com.karumi:dexter:6.2.1'
+//    implementation 'com.github.yalantis:ucrop:2.2.6'
+
+    implementation 'com.github.Hitomis:CrazyShadow:v1.0.1'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+
+    implementation 'com.google.android.gms:play-services-ads:19.3.0'
+    implementation 'com.facebook.android:audience-network-sdk:5.+'
+
+
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    // Play core library
+    implementation "com.google.android.play:core:1.10.0"
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    // For ImageLoading
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.5.0'
+    // RxAndroid retrofit
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    // For Volley Server Response
+    implementation 'com.android.volley:volley:1.2.0'
+    // For WebLoading
+    implementation 'com.asksira.android:webviewsuite:1.0.3'
+    // Countrycodepicker
+    implementation 'com.github.joielechong:countrycodepicker:2.4.2'
+
+    implementation 'com.chaos.view:pinview:1.4.4'
+    // Razorpay Payment gateway
+    implementation 'com.razorpay:checkout:1.5.16'
+    // CircularImageview view
+    implementation 'com.mikhaellopez:circularimageview:4.2.0'
+    // Imagepicker
+    implementation 'com.github.nguyenhoanglam:ImagePicker:1.4.3'
+    // For Customize Toast
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
+    // For permission purpose
+    implementation 'com.karumi:dexter:6.2.1'
+    // For image browse and Crop
+    implementation 'com.github.krokyze:ucropnedit:2.2.6'
+    implementation 'com.github.invissvenska:ModalBottomSheetDialog:1.0.5'
+
+}

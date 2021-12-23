@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/font_section"
+    android:layout_width="120.0dip"
+    android:layout_height="120.0dip"
+    android:padding="2.0dip">
+
+    <TextView
+        android:id="@id/txt_font_demo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/card_white"
+        android:gravity="center"
+        android:text="Aa"
+        android:textSize="56.0sp" />
+</FrameLayout>

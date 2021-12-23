@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mylayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/spacing_middle"
+                    android:paddingBottom="@dimen/spacing_middle">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center|left"
+                    android:minHeight="35dp"
+                    android:text="Notifications"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_80"
+                    android:textSize="@dimen/ts_seventeen"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/thirteen"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_80"
+                    android:gravity="center|left"
+                    android:text="Receive push notifications on your device about your packages"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/spacing_middle"
+                        android:paddingBottom="@dimen/spacing_middle">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackground"
+
+                            android:gravity="center_vertical"
+                            android:minHeight="@dimen/spacing_xxlarge"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/spacing_medium"
+                            android:paddingRight="@dimen/spacing_medium">
+
+                            <ImageButton
+                                android:layout_width="@dimen/spacing_xmlarge"
+                                android:layout_height="@dimen/spacing_xmlarge"
+                                android:background="@android:color/transparent"
+                                android:tint="@color/grey_40"
+                                app:srcCompat="@drawable/loader" />
+
+                            <View
+                                android:layout_width="@dimen/spacing_small"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:textSize="@dimen/seventeen"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Your Account"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.0"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Get notified for your account alert"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    android:textSize="@dimen/thirteen"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.0"/>
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="wrap_content" />
+
+                            <ImageButton
+                                android:layout_width="@dimen/spacing_xmlarge"
+                                android:layout_height="@dimen/spacing_xmlarge"
+                                android:background="@android:color/transparent"
+                                android:tint="@color/grey_40"
+                                app:srcCompat="@drawable/ic_arrow_right" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackground"
+
+                            android:gravity="center_vertical"
+                            android:minHeight="@dimen/spacing_xxlarge"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/spacing_medium"
+                            android:paddingRight="@dimen/spacing_medium"><LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackground"
+
+                            android:gravity="center_vertical"
+                            android:minHeight="@dimen/spacing_xxlarge"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/spacing_medium"
+                            android:paddingRight="@dimen/spacing_medium">
+
+                            <ImageButton
+                                android:layout_width="@dimen/spacing_xmlarge"
+                                android:layout_height="@dimen/spacing_xmlarge"
+                                android:background="@android:color/transparent"
+                                android:tint="@color/yellow_800"
+                                app:srcCompat="@drawable/loader" />
+
+                            <View
+                                android:layout_width="@dimen/spacing_small"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/fifteen"
+                                android:text="Important Message Alert"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                android:textColor="@color/grey_90" />
+
+                            <View
+                                android:layout_width="@dimen/spacing_middle"
+                                android:layout_height="wrap_content" />
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                app:thumbTint="@color/colorPrimary" />
+
+                            <View
+                                android:layout_width="@dimen/spacing_middle"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout></LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/spacing_middle"
+                        android:paddingBottom="@dimen/spacing_middle">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackground"
+
+                            android:gravity="center_vertical"
+                            android:minHeight="@dimen/spacing_xxlarge"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/spacing_medium"
+                            android:paddingRight="@dimen/spacing_medium">
+
+                            <ImageButton
+                                android:layout_width="@dimen/spacing_xmlarge"
+                                android:layout_height="@dimen/spacing_xmlarge"
+                                android:background="@android:color/transparent"
+                                android:tint="@color/grey_40"
+                                app:srcCompat="@drawable/loader" />
+
+                            <View
+                                android:layout_width="@dimen/spacing_small"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:textSize="@dimen/seventeen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Your Shippments"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                android:textColor="@color/grey_80"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Find out when ypur packages ship &amp; arrive"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                android:textColor="@color/grey_80"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                android:textSize="@dimen/thirteen"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0"/>
+                        </LinearLayout>
+
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="wrap_content" />
+
+                            <ImageButton
+                                android:layout_width="@dimen/spacing_xmlarge"
+                                android:layout_height="@dimen/spacing_xmlarge"
+                                android:background="@android:color/transparent"
+                                android:tint="@color/grey_40"
+                                app:srcCompat="@drawable/ic_arrow_right" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackground"
+
+                            android:gravity="center_vertical"
+                            android:minHeight="@dimen/spacing_xxlarge"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/spacing_medium"
+                            android:paddingRight="@dimen/spacing_medium">
+
+                            <ImageButton
+                                android:layout_width="@dimen/spacing_xmlarge"
+                                android:layout_height="@dimen/spacing_xmlarge"
+                                android:background="@android:color/transparent"
+                                android:tint="@color/yellow_800"
+                                app:srcCompat="@drawable/loader" />
+
+                            <View
+                                android:layout_width="@dimen/spacing_small"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/fifteen"
+                                android:text="Shipments Notification"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                android:textColor="@color/grey_90" />
+
+                            <View
+                                android:layout_width="@dimen/spacing_middle"
+                                android:layout_height="wrap_content" />
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                app:thumbTint="@color/colorPrimary" />
+
+                            <View
+                                android:layout_width="@dimen/spacing_middle"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/spacing_middle"
+                        android:paddingBottom="@dimen/spacing_middle">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackground"
+
+                            android:gravity="center_vertical"
+                            android:minHeight="@dimen/spacing_xxlarge"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/spacing_medium"
+                            android:paddingRight="@dimen/spacing_medium">
+
+                            <ImageButton
+                                android:layout_width="@dimen/spacing_xmlarge"
+                                android:layout_height="@dimen/spacing_xmlarge"
+                                android:background="@android:color/transparent"
+                                android:tint="@color/grey_40"
+                                app:srcCompat="@drawable/loader" />
+
+                            <View
+                                android:layout_width="@dimen/spacing_small"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:textSize="@dimen/seventeen"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Lightning List Waitlists"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.0"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Find out when deal becomes available"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    android:textSize="@dimen/thirteen"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.0"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="wrap_content" />
+
+                            <ImageButton
+                                android:layout_width="@dimen/spacing_xmlarge"
+                                android:layout_height="@dimen/spacing_xmlarge"
+                                android:background="@android:color/transparent"
+                                android:tint="@color/grey_40"
+                                app:srcCompat="@drawable/ic_arrow_right" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackground"
+
+                            android:gravity="center_vertical"
+                            android:minHeight="@dimen/spacing_xxlarge"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/spacing_medium"
+                            android:paddingRight="@dimen/spacing_medium">
+
+                            <ImageButton
+                                android:layout_width="@dimen/spacing_xmlarge"
+                                android:layout_height="@dimen/spacing_xmlarge"
+                                android:background="@android:color/transparent"
+                                android:tint="@color/yellow_800"
+                                app:srcCompat="@drawable/loader" />
+
+                            <View
+                                android:layout_width="@dimen/spacing_small"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/fifteen"
+                                android:text="Lightning Deal Waitlists"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                android:textColor="@color/grey_90" />
+
+                            <View
+                                android:layout_width="@dimen/spacing_middle"
+                                android:layout_height="wrap_content" />
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                app:thumbTint="@color/colorPrimary" />
+
+                            <View
+                                android:layout_width="@dimen/spacing_middle"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/spacing_middle"
+                        android:paddingBottom="@dimen/spacing_middle">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackground"
+
+                            android:gravity="center_vertical"
+                            android:minHeight="@dimen/spacing_xxlarge"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/spacing_medium"
+                            android:paddingRight="@dimen/spacing_medium">
+
+                            <ImageButton
+                                android:layout_width="@dimen/spacing_xmlarge"
+                                android:layout_height="@dimen/spacing_xmlarge"
+                                android:background="@android:color/transparent"
+                                android:tint="@color/grey_40"
+                                app:srcCompat="@drawable/loader" />
+
+                            <View
+                                android:layout_width="@dimen/spacing_small"
+                                android:layout_height="wrap_content" />
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:textSize="@dimen/seventeen"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Recommendation For You"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.0"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Get recommendation and offers tailored For You"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    android:textSize="@dimen/thirteen"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.0"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="wrap_content" />
+
+                            <ImageButton
+                                android:layout_width="@dimen/spacing_xmlarge"
+                                android:layout_height="@dimen/spacing_xmlarge"
+                                android:background="@android:color/transparent"
+                                android:tint="@color/grey_40"
+                                app:srcCompat="@drawable/ic_arrow_right" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackground"
+
+                            android:gravity="center_vertical"
+                            android:minHeight="@dimen/spacing_xxlarge"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/spacing_medium"
+                            android:paddingRight="@dimen/spacing_medium">
+
+                            <ImageButton
+                                android:layout_width="@dimen/spacing_xmlarge"
+                                android:layout_height="@dimen/spacing_xmlarge"
+                                android:background="@android:color/transparent"
+                                android:tint="@color/yellow_800"
+                                app:srcCompat="@drawable/loader" />
+
+                            <View
+                                android:layout_width="@dimen/spacing_small"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/fifteen"
+                                android:text="Personalisied Notification"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                android:textColor="@color/grey_90" />
+
+                            <View
+                                android:layout_width="@dimen/spacing_middle"
+                                android:layout_height="wrap_content" />
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                app:thumbTint="@color/colorPrimary" />
+
+                            <View
+                                android:layout_width="@dimen/spacing_middle"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/spacing_middle"
+                        android:paddingBottom="@dimen/spacing_middle">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackground"
+
+                            android:gravity="center_vertical"
+                            android:minHeight="@dimen/spacing_xxlarge"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/spacing_medium"
+                            android:paddingRight="@dimen/spacing_medium">
+
+                            <ImageButton
+                                android:layout_width="@dimen/spacing_xmlarge"
+                                android:layout_height="@dimen/spacing_xmlarge"
+                                android:background="@android:color/transparent"
+                                android:tint="@color/grey_40"
+                                app:srcCompat="@drawable/loader" />
+
+                            <View
+                                android:layout_width="@dimen/spacing_small"
+                                android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:textSize="@dimen/seventeen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Recommendation For You"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                android:textColor="@color/grey_80"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Recommendation For You"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textColor="@color/grey_80"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="@dimen/thirteen"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"/>
+        </LinearLayout>
+
+
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="wrap_content" />
+
+                            <ImageButton
+                                android:layout_width="@dimen/spacing_xmlarge"
+                                android:layout_height="@dimen/spacing_xmlarge"
+                                android:background="@android:color/transparent"
+                                android:tint="@color/grey_40"
+                                app:srcCompat="@drawable/ic_arrow_right"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spacing_large" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

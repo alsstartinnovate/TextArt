@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="#242440">
+
+        <ImageView
+            android:id="@id/btnBack"
+            style="@style/ActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="12.0dip"
+            android:src="@drawable/ic_text_back" />
+
+        <ImageView
+            android:id="@id/btnAddText_toolbar"
+            style="@style/ActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_text_add_1" />
+
+        <ImageView
+            android:id="@+id/btn_none"
+            style="@style/ActionButton"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_text_add_1" />
+
+
+        <ImageView
+            android:id="@id/btnUndo"
+            style="@style/ActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btnRedo"
+            android:clickable="true"
+            android:padding="12.0dip"
+            android:src="@drawable/ic_text_undo" />
+
+        <ImageView
+            android:id="@id/btnRedo"
+            style="@style/ActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btnFinish"
+            android:clickable="true"
+            android:padding="12.0dip"
+            android:src="@drawable/ic_text_redo" />
+
+        <ImageView
+            android:id="@id/btnFinish"
+            style="@style/ActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:padding="12.0dip"
+            android:src="@drawable/ic_text_share" />
+    </RelativeLayout>
+</RelativeLayout>

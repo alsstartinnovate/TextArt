@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280.0dip"
+    android:layout_height="fill_parent"
+    android:background="@drawable/rounded_border_dialog"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:alpha="87.0"
+        android:fontFamily="@font/san_bold"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="20.0dip"
+        android:paddingLeft="24.0dip"
+        android:paddingRight="24.0dip"
+        android:text="@string/discard_photo"
+        android:textColor="#de000000"
+        android:textSize="20.0dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:alpha="60.0"
+        android:fontFamily="@font/san_regular"
+        android:gravity="center_vertical"
+        android:paddingLeft="24.0dip"
+        android:paddingRight="24.0dip"
+        android:text="@string/if_you_go_back_you_will_lose_your_photo"
+        android:textColor="#ff232f34"
+        android:textSize="16.0dip" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="52.0dip"
+        android:layout_marginTop="28.0dip"
+        android:orientation="horizontal"
+        android:paddingRight="8.0dip">
+
+        <TextView
+            android:id="@id/tv_keep"
+            style="@style/SelectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="36.0dip"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8.0dip"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:fontFamily="@font/san_bold"
+            android:gravity="center"
+            android:paddingLeft="16.0dip"
+            android:paddingRight="16.0dip"
+            android:text="@string/keep"
+            android:textAllCaps="true"
+            android:textColor="#ff5c1349"
+            android:textSize="14.0dip" />
+
+        <TextView
+            android:id="@id/tv_discard"
+            style="@style/SelectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="36.0dip"
+            android:layout_margin="8.0dip"
+            android:layout_toLeftOf="@id/tv_keep"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:fontFamily="@font/san_regular"
+            android:gravity="center"
+            android:paddingLeft="16.0dip"
+            android:paddingRight="16.0dip"
+            android:text="@string/discard"
+            android:textAllCaps="true"
+            android:textColor="#ff5c1349"
+            android:textSize="14.0dip" />
+    </RelativeLayout>
+</LinearLayout>

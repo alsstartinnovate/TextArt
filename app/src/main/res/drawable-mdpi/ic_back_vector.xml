@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dip" android:width="24.0dip" android:viewportWidth="100.0" android:viewportHeight="100.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:name="rotation" android:pivotX="50.0" android:pivotY="50.0">
+        <path android:name="back" android:pathData="@string/back_vector_path" android:strokeColor="@android:color/white" android:strokeWidth="8.0" android:strokeLineCap="round" />
+    </group>
+</vector>

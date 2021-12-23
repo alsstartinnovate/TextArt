@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/mainactivity1"
+              android:layout_width="fill_parent" android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar_sample" android:layout_width="fill_parent"
+                                           android:layout_height="?actionBarSize"
+                                           android:layout_alignParentBottom="true">
+            <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:gravity="center"
+                      android:layout_width="fill_parent" android:layout_height="?actionBarSize"
+                      android:layout_marginRight="16.0dip" android:text="@string/choose_a_background"
+                      android:fontFamily="@font/san_bold"/>
+        </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent"
+                      android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerSuggest"
+                                                       android:layout_width="fill_parent"
+                                                       android:layout_height="60.0dip"
+                                                       android:nestedScrollingEnabled="false"/>
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center_vertical"
+                      android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip"
+                      android:text="@string/color" android:fontFamily="@font/san_regular"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerColor" android:layout_width="fill_parent"
+                                                       android:layout_height="100.0dip"
+                                                       android:nestedScrollingEnabled="false"/>
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content"
+                                               android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip"
+                                               android:layout_marginRight="8.0dip"
+                                               app:cardBackgroundColor="@color/white" app:cardCornerRadius="4.0dip">
+                <com.anilax.textart.views.nativead.TemplateView
+                        android:id="@id/admob_native_container" android:visibility="gone"
+                        android:layout_width="fill_parent" android:layout_height="120.0dip"
+                        app:gnt_template_type="@layout/admob_native_small"/>
+                <LinearLayout android:orientation="vertical" android:id="@id/fb_native_container"
+                              android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+            </androidx.cardview.widget.CardView>
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center_vertical"
+                      android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip"
+                      android:text="@string/nature" android:fontFamily="@font/san_regular"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerNature"
+                                                       android:layout_width="fill_parent"
+                                                       android:layout_height="150.0dip"
+                                                       android:nestedScrollingEnabled="false"/>
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center_vertical"
+                      android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip"
+                      android:text="@string/flowers" android:fontFamily="@font/san_regular"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerFlowers"
+                                                       android:layout_width="fill_parent"
+                                                       android:layout_height="120.0dip"
+                                                       android:nestedScrollingEnabled="false"/>
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center_vertical"
+                      android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip"
+                      android:text="@string/night_sky" android:fontFamily="@font/san_regular"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerNight" android:layout_width="fill_parent"
+                                                       android:layout_height="150.0dip"
+                                                       android:nestedScrollingEnabled="false"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

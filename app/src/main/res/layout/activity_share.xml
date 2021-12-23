@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/relativeShare"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mainactivity1">
+
+    <RelativeLayout
+        android:id="@id/toolBarShare"
+        android:layout_width="fill_parent"
+        android:layout_height="96.0dip">
+
+        <ImageView
+            android:id="@id/btnBackShare"
+            android:layout_width="56.0dip"
+            android:layout_height="56.0dip"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:padding="16.0dip"
+            android:src="@drawable/ic_back_24dp" />
+
+        <FrameLayout
+            android:id="@id/img_final_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/btnRate"
+            android:layout_toRightOf="@id/btnBackShare">
+
+            <androidx.cardview.widget.CardView
+                android:id="@id/img_final_card"
+                android:layout_width="72.0dip"
+                android:layout_height="72.0dip"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:cardCornerRadius="4.0dip">
+
+                <ImageView
+                    android:id="@id/img_final"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/main" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:background="#33000000"
+                    android:padding="16.0dip"
+                    android:src="@drawable/ic_search_24dp" />
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@id/btnRate"
+            android:layout_width="56.0dip"
+            android:layout_height="56.0dip"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_new"
+            android:background="?actionBarItemBackground"
+            android:clickable="true"
+            android:padding="14.0dip"
+            android:visibility="gone"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/ic_rate" />
+
+        <ImageView
+            android:id="@id/btn_new"
+            android:layout_width="56.0dip"
+            android:layout_height="56.0dip"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:fontFamily="@font/san_bold"
+            android:gravity="center"
+            android:paddingLeft="16.0dip"
+            android:paddingRight="16.0dip"
+            android:src="@drawable/ic_home_24dp"
+            android:text="New"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="14.0dip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/adContainerNative"
+        android:layout_below="@id/toolBarShare"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="100.0dip"
+            android:layout_marginLeft="4.0dip"
+            android:layout_marginTop="3.0dip"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="12.0dip"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:background="@drawable/circle_blur">
+
+                        <ImageView
+                            android:id="@id/btnShareMore"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:clickable="true"
+                            android:padding="12.0dip"
+                            android:src="@drawable/ic_share" />
+                    </FrameLayout>
+
+                    <TextView
+                        style="@style/TextBelowImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:text="Other" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="12.0dip"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@id/btnWallpaper"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:src="@drawable/ic_wallpaper" />
+
+                    <TextView
+                        style="@style/TextBelowImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:text="Wallpaper" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="12.0dip"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@id/btnInstagram"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:src="@drawable/ic_instagram" />
+
+                    <TextView
+                        style="@style/TextBelowImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:text="Instagram" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="12.0dip"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@id/btnFacebook"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:src="@drawable/ic_facebook2" />
+
+                    <TextView
+                        style="@style/TextBelowImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:text="Facebook" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="12.0dip"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@id/btnMessenger"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:src="@drawable/ic_messenger" />
+
+                    <TextView
+                        style="@style/TextBelowImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:text="Messenger" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="12.0dip"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@id/btnZalo"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:src="@drawable/ic_zalo" />
+
+                    <TextView
+                        style="@style/TextBelowImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:text="Zalo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="12.0dip"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@id/btnGmail"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:src="@drawable/ic_gmail2" />
+
+                    <TextView
+                        style="@style/TextBelowImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:text="Gmail" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="12.0dip"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@id/btnWhatsApp"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:src="@drawable/ic_whatsapp" />
+
+                    <TextView
+                        style="@style/TextBelowImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:text="WhatsApp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="12.0dip"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@id/btnTwitter"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:src="@drawable/ic_twitter" />
+
+                    <TextView
+                        style="@style/TextBelowImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:text="Twitter" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@id/adContainerNative"
+        android:layout_width="fill_parent"
+        android:layout_height="320.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_marginBottom="12.0dip"
+        android:visibility="visible"
+        app:cardBackgroundColor="@color/mainactivity2"
+        app:cardCornerRadius="4.0dip"
+        app:cardElevation="2.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/san_regular"
+            android:text="@string/loading"
+            android:textColor="@color/white"
+            android:textSize="14.0sp" />
+
+        <include
+            android:id="@id/admob_native_container"
+            layout="@layout/admob_native_medium"
+            android:layout_width="fill_parent"
+            android:layout_height="320.0dip"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@id/fb_native_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@id/ad_attribution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left|top"
+            android:layout_margin="2.0dip"
+            android:background="@drawable/ad_bg"
+            android:paddingLeft="3.0dip"
+            android:paddingRight="3.0dip"
+            android:text="Ad"
+            android:textColor="@color/white"
+            android:textSize="12.0sp" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

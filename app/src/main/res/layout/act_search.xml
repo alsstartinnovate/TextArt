@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/headlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbackcolor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/lay_actionbar"
+            layout="@layout/include_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/twenty" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lay_actionbar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/search_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fortyfive"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/seven"
+                android:background="@drawable/back_edittext_light"
+                android:hint="@string/search_text"
+                android:paddingLeft="@dimen/fifteen" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_popularhashtag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/search_text"
+                android:layout_marginTop="@dimen/ten"
+                android:scrollbars="vertical"
+                android:scrollingCache="true" />
+
+            <LinearLayout
+                android:id="@+id/lay_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/search_text"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/search_text"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/txt_searchvideo"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/fortyfive"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/fifteen"
+                        android:text="@string/search_text1"
+                        android:textColor="@color/overlay_dark_70"
+                        android:textSize="@dimen/ts_seventeen" />
+
+                    <TextView
+                        android:id="@+id/txt_searchhashtag"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/fortyfive"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/fifteen"
+                        android:text="@string/search_text2"
+                        android:textColor="@color/overlay_dark_70"
+                        android:textSize="@dimen/ts_seventeen" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/search_text"
+                    android:layout_marginTop="@dimen/ten"
+                    android:scrollbars="vertical"
+                    android:scrollingCache="true" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include
+            layout="@layout/include_connection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/twenty" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
