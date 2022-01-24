@@ -51,7 +51,7 @@
                 android:layout_weight="1.0"
                 android:gravity="center">
 
-                <com.anilax.customdesign.views.ToggleImageButton
+                <com.startup.textart.views.ToggleImageButton
                     android:id="@id/btn_bold"
                     android:layout_width="30.0dip"
                     android:layout_height="30.0dip"
@@ -65,7 +65,7 @@
                 android:layout_weight="1.0"
                 android:gravity="center">
 
-                <com.anilax.customdesign.views.ToggleImageButton
+                <com.startup.textart.views.ToggleImageButton
                     android:id="@id/btn_italic"
                     android:layout_width="30.0dip"
                     android:layout_height="30.0dip"
@@ -79,7 +79,7 @@
                 android:layout_weight="1.0"
                 android:gravity="center">
 
-                <com.anilax.customdesign.views.ToggleImageButton
+                <com.startup.textart.views.ToggleImageButton
                     android:id="@id/btn_all_caps"
                     android:layout_width="30.0dip"
                     android:layout_height="30.0dip"

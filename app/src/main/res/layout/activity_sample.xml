@@ -31,7 +31,7 @@
                                                android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip"
                                                android:layout_marginRight="8.0dip"
                                                app:cardBackgroundColor="@color/white" app:cardCornerRadius="4.0dip">
-                <com.anilax.textart.views.nativead.TemplateView
+                <com.startup.textart.views.nativead.TemplateView
                         android:id="@id/admob_native_container" android:visibility="gone"
                         android:layout_width="fill_parent" android:layout_height="120.0dip"
                         app:gnt_template_type="@layout/admob_native_small"/>

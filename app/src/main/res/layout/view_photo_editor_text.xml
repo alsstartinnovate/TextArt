@@ -11,13 +11,13 @@
         android:layout_margin="18dp"
         android:background="@drawable/rounded_border_tv">
 
-        <com.anilax.customdesign.photoeditor.RoundFrameLayout
+        <com.startup.textart.photoeditor.RoundFrameLayout
             android:id="@+id/frmBorder_highlight"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             app:rv_cornerRadius="8.0dip">
 
-            <com.anilax.customdesign.photoeditor.StrokeTextView
+            <com.startup.textart.photoeditor.StrokeTextView
                 android:id="@+id/tvPhotoEditorText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
                 android:gravity="center"
                 android:textColor="#ff000000"
                 android:textSize="40.0sp" />
-        </com.anilax.customdesign.photoeditor.RoundFrameLayout>
+        </com.startup.textart.photoeditor.RoundFrameLayout>
     </FrameLayout>
 
     <FrameLayout

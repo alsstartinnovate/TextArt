@@ -6,7 +6,7 @@ import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.widget.Toast;
 
-import com.anilax.textart.R;
+import com.startup.textart.R;
 
 import es.dmoral.toasty.Toasty;
 

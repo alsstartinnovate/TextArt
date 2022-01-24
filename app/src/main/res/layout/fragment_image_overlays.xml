@@ -36,7 +36,7 @@
                     app:cardCornerRadius="4.0dip"
                     app:cardUseCompatPadding="true">
 
-                    <com.anilax.customdesign.views.SquareImageView
+                    <com.startup.textart.views.SquareImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -70,7 +70,7 @@
                     app:cardCornerRadius="4.0dip"
                     app:cardUseCompatPadding="true">
 
-                    <com.anilax.customdesign.views.SquareImageView
+                    <com.startup.textart.views.SquareImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -104,7 +104,7 @@
                     app:cardCornerRadius="4.0dip"
                     app:cardUseCompatPadding="true">
 
-                    <com.anilax.customdesign.views.SquareImageView
+                    <com.startup.textart.views.SquareImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -138,7 +138,7 @@
                     app:cardCornerRadius="4.0dip"
                     app:cardUseCompatPadding="true">
 
-                    <com.anilax.customdesign.views.SquareImageView
+                    <com.startup.textart.views.SquareImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -172,7 +172,7 @@
                     app:cardCornerRadius="4.0dip"
                     app:cardUseCompatPadding="true">
 
-                    <com.anilax.customdesign.views.SquareImageView
+                    <com.startup.textart.views.SquareImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -206,7 +206,7 @@
                     app:cardCornerRadius="4.0dip"
                     app:cardUseCompatPadding="true">
 
-                    <com.anilax.customdesign.views.SquareImageView
+                    <com.startup.textart.views.SquareImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -247,7 +247,7 @@
                     app:cardCornerRadius="4.0dip"
                     app:cardUseCompatPadding="true">
 
-                    <com.anilax.customdesign.views.SquareImageView
+                    <com.startup.textart.views.SquareImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -281,7 +281,7 @@
                     app:cardCornerRadius="4.0dip"
                     app:cardUseCompatPadding="true">
 
-                    <com.anilax.customdesign.views.SquareImageView
+                    <com.startup.textart.views.SquareImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -315,7 +315,7 @@
                     app:cardCornerRadius="4.0dip"
                     app:cardUseCompatPadding="true">
 
-                    <com.anilax.customdesign.views.SquareImageView
+                    <com.startup.textart.views.SquareImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -349,7 +349,7 @@
                     app:cardCornerRadius="4.0dip"
                     app:cardUseCompatPadding="true">
 
-                    <com.anilax.customdesign.views.SquareImageView
+                    <com.startup.textart.views.SquareImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -383,7 +383,7 @@
                     app:cardCornerRadius="4.0dip"
                     app:cardUseCompatPadding="true">
 
-                    <com.anilax.customdesign.views.SquareImageView
+                    <com.startup.textart.views.SquareImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -417,7 +417,7 @@
                     app:cardCornerRadius="4.0dip"
                     app:cardUseCompatPadding="true">
 
-                    <com.anilax.customdesign.views.SquareImageView
+                    <com.startup.textart.views.SquareImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -460,7 +460,7 @@
                     app:cardCornerRadius="4.0dip"
                     app:cardUseCompatPadding="true">
 
-                    <com.anilax.customdesign.views.SquareImageView
+                    <com.startup.textart.views.SquareImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -494,7 +494,7 @@
                     app:cardCornerRadius="4.0dip"
                     app:cardUseCompatPadding="true">
 
-                    <com.anilax.customdesign.views.SquareImageView
+                    <com.startup.textart.views.SquareImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"

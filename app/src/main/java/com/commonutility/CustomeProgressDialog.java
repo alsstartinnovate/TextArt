@@ -5,7 +5,7 @@ import android.content.Context;
 import android.view.Gravity;
 import android.view.WindowManager;
 
-import com.anilax.textart.R;
+import com.startup.textart.R;
 
 public class CustomeProgressDialog extends Dialog {
     public CustomeProgressDialog(Context context, int layoutResID) {

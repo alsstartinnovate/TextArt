@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@id/frameLayoutEditMai"
     android:layout_width="fill_parent"
@@ -25,7 +24,7 @@
             android:layout_above="@id/ads_container"
             android:layout_below="@id/toolBar">
 
-            <com.anilax.customdesign.photoeditor.PhotoEditorView
+            <com.startup.textart.photoeditor.PhotoEditorView
                 android:id="@id/imgPhotoEditor"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
@@ -43,6 +42,7 @@
         <FrameLayout
             android:id="@id/ads_container"
             android:layout_width="fill_parent"
+            android:visibility="gone"
             android:layout_height="wrap_content"
             android:layout_above="@id/rl_container">
 
@@ -182,7 +182,7 @@
                     android:layout_below="@id/seekbar_rotate"
                     android:orientation="vertical">
 
-                    <com.anilax.customdesign.photoeditor.RoundFrameLayout
+                    <com.startup.textart.photoeditor.RoundFrameLayout
                         android:id="@id/btn_picker_color_photo"
                         android:layout_width="35.0dip"
                         android:layout_height="35.0dip"
@@ -199,7 +199,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:src="@drawable/ic_pencil" />
-                    </com.anilax.customdesign.photoeditor.RoundFrameLayout>
+                    </com.startup.textart.photoeditor.RoundFrameLayout>
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@id/recycler_color_photo"

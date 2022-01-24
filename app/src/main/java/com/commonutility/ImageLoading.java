@@ -11,11 +11,9 @@ import android.util.Base64;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.anilax.textart.R;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.startup.textart.R;
 import com.bumptech.glide.Glide;
-import com.squareup.picasso.Callback;
-import com.squareup.picasso.Picasso;
-
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -42,27 +40,26 @@ public class ImageLoading {
                 imgView.setImageResource(defaultImg);
             }
         } else {
-//			Glide
-//					.with(imgView.getContext())
-//					.load(imageUrl)
-//					.thumbnail(0.5f)
-//					.crossFade()
-//					.centerCrop()
-//					.error(R.drawable.ic_launcher)
-////                  .placeholder(R.drawable.loading_spinner)
-//					.diskCacheStrategy(DiskCacheStrategy.ALL)
-//					.dontAnimate()
-//					.into(imgView);
-            Picasso.get()
+            Glide
+                    .with(imgView.getContext())
                     .load(imageUrl)
-                    .error(defaultImg)
-                    .placeholder(R.mipmap.ic_launcher)
-                    .into(imgView, new Callback.EmptyCallback() {
-                        @Override
-                        public void onSuccess() {
+                    .thumbnail(0.5f)
+                    .centerCrop()
+                    .error(R.drawable.loader)
+                    .placeholder(R.drawable.loader)
+                    .diskCacheStrategy(DiskCacheStrategy.ALL)
+                    .dontAnimate()
+                    .into(imgView);
+//            Picasso.get()
+//                    .load(imageUrl)
+//                    .error(defaultImg)
+//                    .placeholder(R.mipmap.ic_launcher)
+//                    .into(imgView, new Callback.EmptyCallback() {
+//                        @Override
+//                        public void onSuccess() {
 //                        progress.setVisibility(View.GONE);
-                        }
-                    });
+//                        }
+//                    });
         }
     }
 
@@ -148,6 +145,7 @@ public class ImageLoading {
         }
         return number;
     }
+
     public static void mDownloadAndSave(File file, String directory,
                                         String[] url, String[] imgName) {
         // Setting up file to write the image to.

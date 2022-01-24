@@ -1,3 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.anilax.customdesign.views.CircleImageView android:id="@id/img_background_circle" android:padding="5.0dip" android:layout_width="100.0dip" android:layout_height="100.0dip" android:scaleType="centerCrop"
+<com.startup.textart.views.CircleImageView android:id="@id/img_background_circle" android:padding="5.0dip" android:layout_width="100.0dip" android:layout_height="100.0dip" android:scaleType="centerCrop"
                                             xmlns:android="http://schemas.android.com/apk/res/android" />

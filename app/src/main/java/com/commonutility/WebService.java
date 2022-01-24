@@ -6,7 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-import com.anilax.textart.R;
+import com.startup.textart.R;
 import com.retrofit.ApiClient;
 import com.retrofit.ApiInterface;
 

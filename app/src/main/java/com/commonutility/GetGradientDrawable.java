@@ -4,7 +4,7 @@ import android.content.Context;
 import android.graphics.drawable.GradientDrawable;
 import android.view.View;
 
-import com.anilax.textart.R;
+import com.startup.textart.R;
 
 public class GetGradientDrawable {
     //            GetGradientDrawable.setGradientDrawable(context, layHeadChange, new float[] {20, 20, 20, 20, 20, 20, 20, 20},

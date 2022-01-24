@@ -4,7 +4,7 @@
     android:layout_width="wrap_content"
     android:layout_height="fill_parent">
 
-    <com.anilax.customdesign.photoeditor.RoundFrameLayout
+    <com.startup.textart.photoeditor.RoundFrameLayout
         android:id="@id/color_section"
         android:layout_width="38.0dip"
         android:layout_height="38.0dip"

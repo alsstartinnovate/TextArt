@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Environment;
 import android.util.Log;
 
-import com.anilax.textart.R;
+import com.startup.textart.R;
 import com.commonutility.GlobalData;
 import com.commonutility.ShowCustomToast;
 

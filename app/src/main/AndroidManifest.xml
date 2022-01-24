@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.anilax.textart">
+    package="com.startup.textart">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -15,7 +15,7 @@
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
 
     <application
-        android:name="com.anilax.textart.BaseApp"
+        android:name="com.startup.textart.activities.BaseApp"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:icon="@drawable/logo"
@@ -36,28 +36,28 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity
-            android:name="com.anilax.customdesign.activities.EditPhotoActivity"
+            android:name="com.startup.textart.activities.EditPhotoActivity"
             android:launchMode="singleTop"
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.anilax.customdesign.activities.SampleActivity"
+            android:name="com.startup.textart.activities.SampleActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.anilax.customdesign.activities.ShareActivity"
+            android:name="com.startup.textart.activities.ShareActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.anilax.customdesign.activities.SearchingActivity"
+            android:name="com.startup.textart.activities.SearchingActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.anilax.customdesign.activities.MainActivity"
+            android:name="com.startup.textart.activities.MainActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.yalantis.ucrop.UCropActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.anilax.customdesign.activities.ThankYouActivity"
+            android:name="com.startup.textart.activities.ThankYouActivity"
             android:screenOrientation="portrait" />
 
         <!--        <provider-->
@@ -75,7 +75,7 @@
 
 
         <activity
-            android:name="com.anilax.activity.ActivitySplash"
+            android:name="com.startup.textart.activities.ActivitySplash"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -84,86 +84,80 @@
         </activity>
 
         <activity
-            android:name="com.anilax.activity.ActivityAbout"
+            android:name="com.startup.textart.activities.ActivityAbout"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <activity
-            android:name="com.anilax.activity.ActivityLetsStart"
+            android:name="com.startup.textart.activities.ActivityLetsStart"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <activity
-            android:name="com.anilax.textart.ActivityQuotes"
+            android:name="com.startup.textart.activities.ActivityQuotes"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
 
         <activity
-            android:name="com.anilax.activity.ActivityPopulateSpinner"
+            android:name="com.startup.textart.activities.ActivityPopulateSpinner"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <activity
-            android:name="com.anilax.activity.ActivityBrowseProfileImage"
+            android:name="com.startup.textart.activities.ActivityBrowseProfileImage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <activity
-            android:name="com.anilax.activity.ActivityHelpFeedback"
+            android:name="com.startup.textart.activities.ActivityHelpFeedback"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <activity
-            android:name="com.anilax.activity.ActivityIntro"
+            android:name="com.startup.textart.activities.ActivityIntro"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <activity
-            android:name="com.anilax.activity.ActivityMain"
+            android:name="com.startup.textart.activities.ActivityNotification"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <activity
-            android:name="com.anilax.activity.ActivityNotification"
+            android:name="com.startup.textart.activities.ActivitySelectTheme"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <activity
-            android:name="com.anilax.activity.ActivitySelectTheme"
+            android:name="com.startup.textart.activities.ActivitySetting"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <activity
-            android:name="com.anilax.activity.ActivitySetting"
+            android:name="com.startup.textart.activities.ActivityShare"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <activity
-            android:name="com.anilax.activity.ActivityShare"
+            android:name="com.startup.textart.com.anilax.customdesign.activities.ActivitySpannedTextView"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <activity
-            android:name="com.anilax.textart.ActivitySpannedTextView"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
-
-        <activity
-            android:name="com.anilax.activity.WebViewActivity"
+            android:name="com.startup.textart.activities.WebViewActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />

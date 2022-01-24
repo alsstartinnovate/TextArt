@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.widget.Toolbar;
 
-import com.anilax.textart.R;
+import com.startup.textart.R;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
 

@@ -16,7 +16,7 @@ import android.view.Display;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.anilax.textart.R;
+import com.startup.textart.R;
 
 import java.io.File;
 import java.io.FileNotFoundException;

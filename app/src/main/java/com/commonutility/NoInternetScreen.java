@@ -15,13 +15,13 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.anilax.activity.ActivityNotification;
-import com.anilax.activity.ActivitySelectTheme;
-import com.anilax.activity.ActivitySplash;
-import com.anilax.textart.ActivityChooseInterest;
-import com.anilax.textart.ActivityNew;
-import com.anilax.textart.ActivityQuotes;
-import com.anilax.textart.R;
+import com.startup.textart.activities.ActivityNotification;
+import com.startup.textart.activities.ActivitySelectTheme;
+import com.startup.textart.activities.ActivitySplash;
+import com.startup.textart.activities.ActivityChooseInterest;
+import com.startup.textart.activities.ActivityNew;
+import com.startup.textart.activities.ActivityQuotes;
+import com.startup.textart.R;
 
 public class NoInternetScreen {
     private Context context;

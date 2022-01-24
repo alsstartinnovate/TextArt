@@ -2,10 +2,10 @@
 <LinearLayout android:orientation="vertical" android:background="@color/backgroundEditActivitySecondary" android:layout_width="fill_parent" android:layout_height="@dimen/text_tool_top_height"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="62.0dip">
-        <com.anilax.customdesign.photoeditor.RoundFrameLayout
+        <com.startup.textart.photoeditor.RoundFrameLayout
             android:id="@id/btn_picker_color_highlight" android:padding="3.0dip" android:clickable="true" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_margin="5.0dip" android:layout_centerVertical="true" app:rv_backgroundColor="@color/backgroundEditActivitySecondary" app:rv_cornerRadius="3.0dip" app:rv_strokeColor="@color/icChecked" app:rv_strokeWidth="2.0dip">
             <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_pencil" />
-        </com.anilax.customdesign.photoeditor.RoundFrameLayout>
+        </com.startup.textart.photoeditor.RoundFrameLayout>
         <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_color_highlight" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_toRightOf="@id/btn_picker_color_highlight" android:layout_centerVertical="true" />
     </RelativeLayout>
     <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
