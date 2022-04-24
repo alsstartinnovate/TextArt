@@ -79,7 +79,8 @@ public class TextEditorDialog extends Dialog implements View.OnClickListener, Qu
         }
     }
 
-    public void onQuotes(int i) {
+    @Override
+    public void onQuotes(int i, String strValue) {
         this.editText.setText(i);
         show();
     }

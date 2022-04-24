@@ -281,7 +281,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="file_provider_authority">com.codunite.marwarcare.provider</string>
+    <string name="file_provider_authority">com.startup.textart.provider</string>
 
     <string name="label_ok">Ok</string>
     <string name="label_cancel">Cancel</string>

@@ -1274,13 +1274,24 @@ public class EditPhotoActivity extends AppCompatActivity implements
                 ((InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE)).hideSoftInputFromWindow(currentFocus.getWindowToken(), 0);
             }
         } else if (item.getTitle().equals("Image From Gallery")) {
-            AdmobAds.OnAdsCloseListener onAdsCloseListener = EditPhotoActivity.this::pickFromGalery;
-            if (!FacebookAds.showFullAds(onAdsCloseListener) && !AdmobAds.showFullAds(onAdsCloseListener)) {
-                onAdsCloseListener.onAdsClose();
-            }
-        } else if (item.getTitle().equals("Image From Gallery")) {
-            dispatchTakePictureIntent();
+//            AdmobAds.OnAdsCloseListener onAdsCloseListener = EditPhotoActivity.this::pickFromGalery;
+//            if (!FacebookAds.showFullAds(onAdsCloseListener) && !AdmobAds.showFullAds(onAdsCloseListener)) {
+//                onAdsCloseListener.onAdsClose();
+//            }
+            Intent svIntent = new Intent(EditPhotoActivity.this, ActivityBrowseImage.class);
+            startActivity(svIntent);
+            finish();
+        } else if (item.getTitle().equals("Image From Camera")) {
+//            dispatchTakePictureIntent();
+            Intent svIntent = new Intent(EditPhotoActivity.this, ActivityBrowseImage.class);
+            startActivity(svIntent);
         }
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
 
     }
 
@@ -1302,10 +1313,11 @@ public class EditPhotoActivity extends AppCompatActivity implements
         return (mon) + " " + date + ", " + year + "";
     }
 
-    public void onQuotes(int i) {
-//        this.editText.setText(i);
-//        show();
-//        QuotesFragment quote = new QuotesFragment();
-//        onText(getResources().getString((quote.genQuotes()).get(i)));
+    public void onQuotes(int i, String strValue) {
+        if (this.numberAddedView < 6) {
+            this.mPhotoEditor.addText(strValue, ContextCompat.getColor(EditPhotoActivity.this, R.color.white));
+        } else {
+            Toast.makeText(this, R.string.max_item, Toast.LENGTH_SHORT).show();
+        }
     }
 }

@@ -101,6 +101,11 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
+        <activity
+            android:name="com.startup.textart.activities.ActivityBrowseImage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <activity
             android:name="com.startup.textart.activities.ActivityPopulateSpinner"
@@ -151,7 +156,7 @@
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <activity
-            android:name="com.startup.textart.com.anilax.customdesign.activities.ActivitySpannedTextView"
+            android:name="com.startup.textart.activities.ActivitySpannedTextView"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
@@ -161,6 +166,5 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
-
     </application>
 </manifest>

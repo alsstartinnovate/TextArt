@@ -27,7 +27,7 @@ public class QuotesFragment extends Fragment {
     List<Integer> listQuote;
 
     public interface QuotesFragmentListener {
-        void onQuotes(int i);
+        void onQuotes(int i, String strValue);
     }
 
     public void setQuotesListener(QuotesFragmentListener quotesFragmentListener) {
@@ -45,8 +45,9 @@ public class QuotesFragment extends Fragment {
         this.listQuote = genQuotes();
         this.quotesAdapter = new QuotesAdapter(this.listQuote, getActivity(), (view, i) -> {
             int intValue = QuotesFragment.this.listQuote.get(i);
+            String strValue = getResources().getString(QuotesFragment.this.listQuote.get(i));
             if (QuotesFragment.this.quotesFragmentListener != null) {
-                QuotesFragment.this.quotesFragmentListener.onQuotes(intValue);
+                QuotesFragment.this.quotesFragmentListener.onQuotes(intValue, strValue);
                 Objects.requireNonNull(QuotesFragment.this.getActivity()).getSupportFragmentManager().popBackStack();
             }
         });
@@ -55,7 +56,7 @@ public class QuotesFragment extends Fragment {
         return inflate;
     }
 
-    public List<Integer> genQuotes() {
+    public final static List<Integer> genQuotes() {
         ArrayList<Integer> arrayList = new ArrayList<>();
         arrayList.add(R.string.quotes1);
         arrayList.add((R.string.quotes2));
